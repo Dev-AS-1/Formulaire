@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire Sécurisé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-container">
+        <h2>Connexion</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Mot de passe">
+        <button id="login-btn">Se connecter</button>
+    </div>
+
+    <div id="form-container" style="display:none;">
+        <h2>Formulaire</h2>
+        <form id="formulaire">
+            <label for="numero">Numéro :</label>
+            <input type="text" id="numero" readonly>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="form-email" required>
+
+            <label for="choix">Choix :</label>
+            <select id="choix">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+
+            <label for="commentaire">Commentaire :</label>
+            <textarea id="commentaire"></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+        <button id="logout-btn">Déconnexion</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
